@@ -81,8 +81,8 @@ devDependencies:
     specifier: ^8.0.0
     version: 8.0.0
   ember-qunit:
-    specifier: ^8.0.1
-    version: 8.0.1(@ember/test-helpers@3.2.0)(ember-source@5.3.0)(qunit@2.20.0)
+    specifier: https://gitpkg.now.sh/nelstrom/ember-qunit/addon?remove-nolint-ui
+    version: '@gitpkg.now.sh/nelstrom/ember-qunit/addon?remove-nolint-ui(@ember/test-helpers@3.2.0)(ember-source@5.3.0)(qunit@2.20.0)'
   ember-resolver:
     specifier: ^11.0.1
     version: 11.0.1(ember-source@5.3.0)
@@ -5488,24 +5488,6 @@ packages:
     dependencies:
       '@embroider/addon-shim': 1.8.6
     transitivePeerDependencies:
-      - supports-color
-    dev: true
-
-  /ember-qunit@8.0.1(@ember/test-helpers@3.2.0)(ember-source@5.3.0)(qunit@2.20.0):
-    resolution: {integrity: sha512-13PtywHNPTQKkDW4o8QRkJvcdsZr8hRyvh6xh/YLAX8+HaRLd3nPL8mBF4O/Kur/DAj3QWLvjzktZ2uRNGSh3A==}
-    peerDependencies:
-      '@ember/test-helpers': '>=3.0.3'
-      ember-source: '>=4.0.0'
-      qunit: ^2.13.0
-    dependencies:
-      '@ember/test-helpers': 3.2.0(ember-source@5.3.0)(webpack@5.88.2)
-      '@embroider/addon-shim': 1.8.6
-      '@embroider/macros': 1.13.1
-      ember-cli-test-loader: 3.1.0
-      ember-source: 5.3.0(@babel/core@7.23.0)(@glimmer/component@1.1.2)(rsvp@4.8.5)(webpack@5.88.2)
-      qunit: 2.20.0
-    transitivePeerDependencies:
-      - '@glint/template'
       - supports-color
     dev: true
 
@@ -11550,4 +11532,25 @@ packages:
   /yocto-queue@1.0.0:
     resolution: {integrity: sha512-9bnSc/HEW2uRy67wc+T8UwauLuPJVn28jb+GtJY16iiKWyvmYJRXVT4UamsAEGQfPohgr2q4Tq0sQbQlxTfi1g==}
     engines: {node: '>=12.20'}
+    dev: true
+
+  '@gitpkg.now.sh/nelstrom/ember-qunit/addon?remove-nolint-ui(@ember/test-helpers@3.2.0)(ember-source@5.3.0)(qunit@2.20.0)':
+    resolution: {tarball: https://gitpkg.now.sh/nelstrom/ember-qunit/addon?remove-nolint-ui}
+    id: '@gitpkg.now.sh/nelstrom/ember-qunit/addon?remove-nolint-ui'
+    name: ember-qunit
+    version: 8.0.1
+    peerDependencies:
+      '@ember/test-helpers': '>=3.0.3'
+      ember-source: '>=4.0.0'
+      qunit: ^2.13.0
+    dependencies:
+      '@ember/test-helpers': 3.2.0(ember-source@5.3.0)(webpack@5.88.2)
+      '@embroider/addon-shim': 1.8.6
+      '@embroider/macros': 1.13.1
+      ember-cli-test-loader: 3.1.0
+      ember-source: 5.3.0(@babel/core@7.23.0)(@glimmer/component@1.1.2)(rsvp@4.8.5)(webpack@5.88.2)
+      qunit: 2.20.0
+    transitivePeerDependencies:
+      - '@glint/template'
+      - supports-color
     dev: true
